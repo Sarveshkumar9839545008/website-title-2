@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Tophead Section Start */
+.tophead{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 0px 100px;
+    align-items: center;
+    background: rgb(3, 69, 3);
+    justify-content: space-between;
+}
+.tophead ul li{
+    color: white;
+    margin: 0px 5px;
+    display: inline-block;
+}
+.tophead ul li a{
+    color: aqua;
+}
+/* Tophead Section End */
+/* Header Section Start */
+header{
+    width: 100%;
+    height: 85px;
+    color: white;
+    padding: 0px 100px;
+    line-height: 100px;
+    background: rgba(25, 145, 25, 0.92);
+}
+header h1{
+    font-size: 50px;
+    margin-right: 20px;
+}
+header h1, header h3{
+    display: inline-block;
+}
+/* Header Section End */
+/* Nav Section Start */
+nav{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 100px;
+    background: rgb(106, 218, 106);
+}
+nav ul li{
+    list-style: none;
+    margin-right: 180px;
+    display: inline-block;
+}
+nav ul li a{
+    color: rgb(16, 16, 16);
+    font-weight: 600;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-size: 100%;
+    transition: 0.3s linear;
+}
+/* Nav Section End */
+/* Content Section Start */
+section{
+    width: 100%;
+    padding: 0px 100px;
+}
+section main{
+    width: 85%;
+    float: left;
+    padding-top: 10px;
+}
+main h1{
+    font-size: 30px;
+    margin-left: 50px;
+}
+main h1, main h3{
+    display: inline-block;
+}
+section aside{
+    width: 100px;
+    float: right;
+    padding-top: 20px 15px;
+    background: rgb(101, 150, 111);
+}
+aside ul li{
+    font-weight: 600;
+    list-style: none;
+}
+aside ul li ul li{
+    padding-left: 20px;
+    font-weight: normal;
+}
+/* Content Section End */
+/* Footer Section Footer */
+footer{
+    width: 100%;
+    height: 100px;
+    color: rgb(249, 247, 247);
+    padding: 20px 100px;
+    font-weight: bold;
+    background: rgb(11, 87, 31);
+}
+footer .links{
+    width: 33%;
+    float: left;
+}
+footer .follow{
+    width: 33%;
+    float: left;
+}
+footer .copy{
+    width: 34%;
+    float: right;
+    float: right;
+}
+/* Footer Section End */
+/* Media Queries Start */
+@media screen and (max-width:991px) {
+    .tophead, footer{
+        height: auto;
+        padding: 10px;
+    }
+    .tophead ul li{
+        display: block;
+    }
+
+    header, nav{
+        text-align: center;
+        padding: 0px 10px;
+    }
+    section{
+        padding: 0px 0px 10px;
+    }
+}
+
+@media screen and (max-width:767px){
+    section main, section aside{
+        float: none;
+        width: 100%;
+        padding: 0px;
+    }
+    footer .links, footer .follow, footer .copy{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:575px) {
+    header{
+        line-height: normal;
+    }
+    header h1, header h3{
+        display: block;
+    }   
+}
+
+/* Media Queries End */
